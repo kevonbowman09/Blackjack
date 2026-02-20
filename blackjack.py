@@ -36,13 +36,13 @@ def readableCard(card):
     else:
         return card
 
-def printTable(table, isTable):
+def printTable(table, firstHouse):
     newTable = []
     
     for card in table:
         newTable.append(readableCard(card))
     
-    if isTable == True:
+    if firstHouse == True:
         newTable[-1] = "?"
     
     addStr = ""
@@ -156,4 +156,5 @@ def adder(table):
     return total
             
 start()
+
 
